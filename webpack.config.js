@@ -41,7 +41,9 @@ module.exports = {
   },
   plugins: [
     new HtmlwebpackPlugin({
-      title: 'react'
+      template: ROOT_PATH + '/index.html',
+      title: 'dist',
+      inject: true
     })
   ],
   // example: if you wish to apply custom babel options
