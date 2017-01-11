@@ -16,15 +16,27 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
+      }
+    ],
     loaders: [
       {
-        test: /\.(png|jpg|gif)$/,
-        loader: 'url-loader?limit=819200'
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'react-hot!babel'
       },
       {
         test: /\.js$/,
-        exclude: /node_modules|vue\/dist|vue-router\/|vue-loader\/|vue-hot-reload-api\//,
-        loader: 'babel'
+        exclude: /node_modules/,
+        loader: 'babel!eslint-loader'
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        loader: 'url-loader?limit=819200'
       },
       {   test: /\.css$/,
         loader: 'style-loader!css-loader?sourceMap'
@@ -38,6 +50,9 @@ module.exports = {
         loader: 'url-loader?limit=50000&name=[path][name].[ext]'
       }
     ]
+  },
+  eslint: {
+    configFile: './.eslintrc'
   },
   plugins: [
     new HtmlwebpackPlugin({
