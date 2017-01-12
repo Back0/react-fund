@@ -76,7 +76,10 @@ module.exports = {
       title: 'dist',
       inject: true
     }),
-    new webpack.optimize.UglifyJsPlugin({minimize: true})
+    new webpack.optimize.UglifyJsPlugin({
+      minimize: true,
+      warnings: false
+    })
   ],
   // example: if you wish to apply custom babel options
   // instead of using vue-loader's default:
