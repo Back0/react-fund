@@ -75,7 +75,8 @@ module.exports = {
       template: ROOT_PATH + '/index.html',
       title: 'dist',
       inject: true
-    })
+    }),
+    new webpack.optimize.UglifyJsPlugin({minimize: true})
   ],
   // example: if you wish to apply custom babel options
   // instead of using vue-loader's default:
@@ -84,9 +85,9 @@ module.exports = {
     plugins: ['transform-runtime']
   },
   devServer: {
-    historyApiFallback: true,
-    hot: true,
+    port: 9999,
     inline: true,
     progress: true,
-  },
+    colors: true
+  }
 }

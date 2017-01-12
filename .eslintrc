@@ -6,6 +6,9 @@
   "plugins": [
     "react"
   ],
+  "ecmaFeatures": {
+    "jsx": true // 启用 JSX
+  },
   "rule": {
     "linebreak-style": 0,
     // allow paren-less arrow functions
