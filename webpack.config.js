@@ -11,6 +11,21 @@ module.exports = {
   entry: {
     main: SRC_PATH + '/main.js'
   },
+  vendor: [
+    'react',
+    'react-dom'
+  ],
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
+    alias: {
+      ROOT_PATH: path.resolve(__dirname),
+      SRC_PATH: path.resolve(ROOT_PATH, 'src'),
+      DIST_PATH: path.resolve(ROOT_PATH, 'dist')
+    }
+  },
+  resolveLoader: {
+    root: path.join(ROOT_PATH, 'node_modules')
+  },
   output: {
     path: DIST_PATH,
     filename: '[name].js'
@@ -18,26 +33,22 @@ module.exports = {
   module: {
     preLoaders: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
+        include: SRC_PATH,
         exclude: /node_modules/,
-        loader: 'eslint-loader'
-      },
-      {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader'
+        loader: 'eslint'
       }
     ],
     loaders: [
       {
-        test: /\.jsx?$/,
+        test: /\.jsx$/,
         exclude: /node_modules/,
         loader: 'react-hot!babel'
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel!eslint-loader'
+        loader: 'babel'
       },
       {
         test: /\.(png|jpg|gif)$/,
