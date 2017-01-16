@@ -81,6 +81,7 @@ html, body {
 #menu {
     display: flex;
     height: 100px;
+    margin: 0 15px;
     border-bottom: 1px solid #ccc;
 }
 #menu .menu-sec {
@@ -107,4 +108,8 @@ html, body {
 #menu .store .menu-img{
     background: url('../imgs/activity.png') no-repeat;
     background-size: contain;
+}
+
+#content {
+    padding: 10px;
 }
