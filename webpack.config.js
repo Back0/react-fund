@@ -76,9 +76,15 @@ module.exports = {
       title: 'dist',
       inject: true
     }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
     new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      warnings: false
+      compress: {
+        warnings: false
+      }
     })
   ],
   // example: if you wish to apply custom babel options
@@ -93,4 +99,4 @@ module.exports = {
     progress: true,
     colors: true
   }
-}
+};
