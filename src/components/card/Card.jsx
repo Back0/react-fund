@@ -12,7 +12,7 @@ const Card = React.createClass({
         <CardMenu/>
         <CardContent/>
       </div>
-    )
+    );
   }
 });
 export default Card;

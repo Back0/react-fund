@@ -9,7 +9,7 @@
   "ecmaFeatures": {
     "jsx": true // 启用 JSX
   },
-  "rule": {
+  "rules": {
     "linebreak-style": 0,
     // allow paren-less arrow functions
     "arrow-parens": 0,
