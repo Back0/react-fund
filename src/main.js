@@ -4,5 +4,5 @@ import Card from 'components/card/Card.jsx';
 
 ReactDOM.render(
   <Card/>,
-  document.querySelector('#app')
+  document.querySelector('#app-container')
 );

@@ -7,7 +7,7 @@ import CardContent from 'components/card/CardContent.jsx';
 const Card = React.createClass({
   render () {
     return (
-      <div id="app-container">
+      <div id="app">
         <CardHeader/>
         <CardMenu/>
         <CardContent/>
