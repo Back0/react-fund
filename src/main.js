@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Card from 'components/card/Card.jsx';
 
 ReactDOM.render(
-  <h1></h1>,
-  document.getElementById('footer')
+  <Card/>,
+  document.querySelector('#app')
 );

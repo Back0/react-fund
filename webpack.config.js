@@ -20,7 +20,8 @@ module.exports = {
     alias: {
       ROOT_PATH: path.resolve(__dirname),
       SRC_PATH: path.resolve(ROOT_PATH, 'src'),
-      DIST_PATH: path.resolve(ROOT_PATH, 'dist')
+      DIST_PATH: path.resolve(ROOT_PATH, 'dist'),
+      components: path.join(ROOT_PATH, 'src/components')
     }
   },
   resolveLoader: {
