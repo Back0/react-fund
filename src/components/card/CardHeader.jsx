@@ -4,15 +4,15 @@ const CardHeader = React.createClass({
   render () {
     return (
       <header id="header">
-        <div class="login">
-          <img src="src/assets/imgs/logo.png" alt="" class="logo"/>
-          <div class="message">
-            <p class="money">财富币 <span class="question">?</span></p>
-            <p class="login-state">未登录</p>
+        <div className="login">
+          <img src="src/assets/imgs/logo.png" alt="" className="logo"/>
+          <div className="message">
+            <p className="money">财富币 <span className="question">?</span></p>
+            <p className="login-state">未登录</p>
           </div>
-          <div class="login-btn">立即登录</div>
+          <div className="login-btn">立即登录</div>
         </div>
-        <div class="desc">100财富币价值1元</div>
+        <div className="desc">100财富币价值1元</div>
       </header>
     );
   }

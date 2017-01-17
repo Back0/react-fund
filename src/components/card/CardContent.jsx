@@ -4,37 +4,37 @@ const CardContent = React.createClass({
   render () {
     return (
       <div id="content">
-        <section class="title">
-          <p class="title-change">财富币兑换</p>
+        <section className="title">
+          <p className="title-change">财富币兑换</p>
         </section>
-        <div class="items">
-          <div class="card">
-            <p class="price">
-              <span class="value">5</span>
+        <div className="items">
+          <div className="card">
+            <p className="price">
+              <span className="value">5</span>
             </p>
-            <div class="detail">
-              <p class="name">5元红包现金券</p>
-              <p class="points">消耗财富币：<span class="count">500</span></p>
+            <div className="detail">
+              <p className="name">5元红包现金券</p>
+              <p className="points">消耗财富币：<span className="count">500</span></p>
             </div>
-            <div class="option">
-              <div class="wrap">
-                <p class="ops">立即</p>
-                <p class="ops">兑换</p>
+            <div className="option">
+              <div className="wrap">
+                <p className="ops">立即</p>
+                <p className="ops">兑换</p>
               </div>
             </div>
           </div>
-          <div class="card">
-            <p class="price">
-              <span class="value">10</span>
+          <div className="card">
+            <p className="price">
+              <span className="value">10</span>
             </p>
-            <div class="detail">
-              <p class="name">10元红包现金券</p>
-              <p class="points">消耗财富币：<span class="count">5000</span></p>
+            <div className="detail">
+              <p className="name">10元红包现金券</p>
+              <p className="points">消耗财富币：<span className="count">5000</span></p>
             </div>
-            <div class="option">
-              <div class="wrap">
-                <p class="ops">立即</p>
-                <p class="ops">兑换</p>
+            <div className="option">
+              <div className="wrap">
+                <p className="ops">立即</p>
+                <p className="ops">兑换</p>
               </div>
             </div>
           </div>
