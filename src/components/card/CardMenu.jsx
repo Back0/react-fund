@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const CardMenu = React.createClass({
+class CardMenu extends Component {
   render () {
     return (
       <div id="menu">
@@ -19,5 +19,6 @@ const CardMenu = React.createClass({
       </div>
     );
   }
-});
+}
+
 export default CardMenu;

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const CardContent = React.createClass({
+class CardContent extends Component {
   render () {
     return (
       <div id="content">
@@ -42,5 +42,6 @@ const CardContent = React.createClass({
       </div>
     );
   }
-});
+}
+
 export default CardContent;

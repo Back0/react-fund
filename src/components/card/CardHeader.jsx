@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const CardHeader = React.createClass({
+class CardHeader extends Component {
   render () {
     return (
       <header id="header">
@@ -16,5 +16,6 @@ const CardHeader = React.createClass({
       </header>
     );
   }
-});
+}
+
 export default CardHeader;
