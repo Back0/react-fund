@@ -177,6 +177,7 @@ html, body {
 #content .items .card .detail .points {
     font-size: 12px;
     color: #999;
+    margin-top: 5px;
 }
 #content .items .card .detail .count {
     color: #f40;
