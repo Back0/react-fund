@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
 class CardHeader extends Component {
+  constructor () {
+    super();
+  }
   render () {
     return (
       <header id="header">

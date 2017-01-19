@@ -1,21 +1,34 @@
 import React, {Component} from 'react';
 
 class CardMenu extends Component {
+  constructor () {
+    super();
+    this.state = {
+      menus: [{
+        type: 'money',
+        title: '财富币明细'
+      }, {
+        type: 'cards',
+        title: '我的卡券'
+      }, {
+        type: 'store',
+        title: '活动商城'
+      }]
+    };
+  }
   render () {
     return (
       <div id="menu">
-        <section className="menu-sec money">
-          <div className="menu-img"></div>
-          <p className="title">财富币明细</p>
-        </section>
-        <section className="menu-sec cards">
-          <div className="menu-img"></div>
-          <p className="title">我的卡券</p>
-        </section>
-        <section className="menu-sec store">
-          <div className="menu-img"></div>
-          <p className="title">活动商城</p>
-        </section>
+        {
+          this.state.menus.map(item => {
+            return (
+              <section className={"menu-sec " + item.type}>
+                <div className="menu-img"></div>
+                <p className="title">{item.title}</p>
+              </section>
+            );
+          })
+        }
       </div>
     );
   }
