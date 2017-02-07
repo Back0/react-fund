@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
-import QAItem from 'components/questions/QA.jsx';
+import QAItem from 'components/questions/QAItem.jsx';
 
-class Questions extends component {
+class Questions extends Component {
   constructor () {
     super();
   }
 
   render () {
-    <div className="questions">
-      <QAItem/>
-    </div>
+    return (
+        <div className="questions">
+          <QAItem/>
+        </div>
+      );
   }
-}
+};
 
 export default Questions;

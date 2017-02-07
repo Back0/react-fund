@@ -17,7 +17,7 @@ class QAItem extends Component {
           这是问题的答案，这个答案可能有点长。
         </dd>
       </dl>
-    )
+    );
   }
 }
 
