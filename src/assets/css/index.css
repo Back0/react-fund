@@ -14,7 +14,7 @@ html, body {
     clear: both;
 }
 
-#app, #app-container {
+#app, #app-container, .app-wrap {
     position: relative;
     height: 100%;
 }
