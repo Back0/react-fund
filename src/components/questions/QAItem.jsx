@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'assets/css/questions.css';
 
 class QAItem extends Component {
   constructor () {

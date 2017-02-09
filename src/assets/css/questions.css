@@ -1,0 +1,10 @@
+.questions {
+    padding: 10px;
+}
+.questions .qa-item {
+    margin-top: 25px;
+}
+.questions .qa-title {
+    margin: 15px 0;
+    border-left: 3px solid #f40;
+}

@@ -21,6 +21,7 @@ module.exports = {
       ROOT_PATH: path.resolve(__dirname),
       SRC_PATH: path.resolve(ROOT_PATH, 'src'),
       DIST_PATH: path.resolve(ROOT_PATH, 'dist'),
+      assets: path.resolve(ROOT_PATH, 'src/assets'),
       components: path.join(ROOT_PATH, 'src/components')
     }
   },
@@ -55,7 +56,8 @@ module.exports = {
         test: /\.(png|jpg|gif)$/,
         loader: 'url-loader?limit=819200'
       },
-      {   test: /\.css$/,
+      {
+        test: /\.css$/,
         loader: 'style-loader!css-loader?sourceMap'
       },
       {
