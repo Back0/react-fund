@@ -29,7 +29,10 @@ class Questions extends Component {
   render () {
     return (
         <div className="questions">
-          <QAItem/>
+
+          <QAItem qa={ this.state.qas[0] }/>
+          <QAItem qa={ this.state.qas[1] }/>
+
         </div>
       );
   }

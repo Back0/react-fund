@@ -9,13 +9,9 @@ class QAItem extends Component {
   render () {
     return (
       <dl className="qa-item">
-        <dt className="qa-title">this is a question</dt>
+        <dt className="qa-title">{ this.props.qa.question }</dt>
         <dd className="qa-answer">
-          这是问题的答案，这个答案可能有点长。
-          这是问题的答案，这个答案可能有点长。
-          这个答案可能有点长。这是问题的答案，
-          这个答案可能有点长。这是问题的答案，
-          这是问题的答案，这个答案可能有点长。
+          { this.props.qa.answer }
         </dd>
       </dl>
     );
