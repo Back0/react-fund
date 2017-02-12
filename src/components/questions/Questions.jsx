@@ -29,9 +29,13 @@ class Questions extends Component {
   render () {
     return (
         <div className="questions">
-
-          <QAItem qa={ this.state.qas[0] }/>
-          <QAItem qa={ this.state.qas[1] }/>
+          {
+            this.state.qas.map(item => {
+              return (
+                <QAItem qa={ item }/>
+              );
+            })
+          }
 
         </div>
       );
